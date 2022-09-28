@@ -1,12 +1,47 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="light" id="darkmode">
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davao Oriental State University</title>
-    <link rel="icon" href="images/icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/icon.png" >
+    <title>Davo Oriental State University</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="theme.js" type="text/javascript"></script>
+
+<style>
+
+.box{
+    animation: loop 10s linear infinite;
+}
+
+   @keyframes fade{
+            0%{opacity: 0%;}
+            100%{opacity: 100%;}
+        }
+        *{
+            animation: fade 0.5s ease;
+        }
+        .bgimage{
+            background-image: url(backgrounddorsu.jpg);
+            background-size: cover;
+            box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.40);
+        }
+ 
+        @media screen and (max-width:800px){
+            #check:checked ~ nav ul{
+                display: block;
+            }
+            
+        }
+</style>    
+
 
 </head>
 <body class="container mx-auto ">
@@ -18,14 +53,40 @@
             <span  class="ml-3 text-xl">DORSU</span>
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a href="#" class="mr-5 hover:text-white">About</a>
-            <a href="#" class="mr-5 hover:text-white">Students</a>
-            <a href="#" class="mr-5 hover:text-white">Resource</a>
-            <a href="#" class="mr-5 hover:text-white">Admission</a>
+            <a href="#" class="mr-5 hover:text-white">HOME</a>
+            <a href="#" class="mr-5 hover:text-white">ABOUT</a>
+            <a href="#" class="mr-5 hover:text-white">ACADEMICS</a>
+            <a href="#" class="mr-5 hover:text-white">RESEARCH</a>
+            <a href="#" class="mr-5 hover:text-white">STUDENTS</a>
+            <a href="#" class="mr-5 hover:text-white">RESOURCE</a>
+            <a href="#" class="mr-5 hover:text-white">ADMISSION</a>
+            <a href="#" class="mr-5 hover:text-white">GRADE INQUIRY</a>
           </nav>
-          <button> <a href="index.html" class="inline-flex items-center text-blue-700 bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-blue-700 hover:text-white rounded text-base mt-4 md:mt-0">Home
-         </a> 
-          </button>
+
+          <button class="rounded-full duration-500" id="btn">
+
+            <span class="sun" id="sun">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    strokeWidth={1.5} stroke="currentColor" className="scale-100" height="25"
+                    width="25">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+            </span>
+
+            <span class="hidden" id="moon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="scale-100" height="24"
+                    width="24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+            </span>
+
+        </button>
+
+
+         
         </div>
 
       </header>
@@ -45,13 +106,15 @@
         <div class="container px-5 py-24 mx-auto text-white">
           <div class="flex flex-wrap w-full mb-20">
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-yellow-500 hover:text-blue-500">MONTHLY ARCHIVE: JUNE 2022</h1>
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-yellow-500 hover:text-blue-500 ">MONTHLY ARCHIVE: JUNE 2022</h1>
               <div class="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
+            
           </div>
+          <h1 class="mb-10 text-center sm:text-3xl text-2xl font-medium  title-font text-yellow-500 hover:text-blue-500">DAVAO ORIENTAL STATE UNIVERSITY NEWS AND EVENTS</h1>
           <div class="flex flex-wrap -m-4">
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <div class="bg-gray-800 bg-opacity-40  rounded-lg">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/content1.jpg" alt="content">
                 <h3 class="tracking-widest text-blue-300 text-xs font-medium title-font">DORSU NEWSJUNE 9, 2022</h3>
                 <a href="https://dorsu.edu.ph/2022/06/09/dorsu-dsvv-in-india-affirm-partnership-for-academic-and-research-programs/" class="text-lg text-white font-medium title-font mb-4 hover:text-blue-300"> DOrSU, DSVV in India affirm partnership for academic and research programs
@@ -60,7 +123,7 @@
               </div>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <div class="bg-gray-800 bg-opacity-40  rounded-lg">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/content2.jpg" alt="content">
                 <h3 class="tracking-widest text-blue-300 text-xs font-medium title-font">DORSU NEWSJUNE 8, 2022</h3>
                 <a href="https://dorsu.edu.ph/2022/06/08/dorsu-president-to-meet-with-the-pro-vice-chancellor-of-an-indian-university//" class="text-lg text-white font-medium title-font mb-4 hover:text-blue-300"> DOrSU President to meet with the Pro Vice Chancellor of an Indian University
@@ -69,7 +132,7 @@
               </div>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <div class="bg-gray-800 bg-opacity-40  rounded-lg">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/content3.jpg" alt="content">
                 <h3 class="tracking-widest text-blue-200 text-xs font-medium title-font">DORSU NEWSJUNE 8, 2022</h3>
                 <a href="https://dorsu.edu.ph/2022/06/08/dorsu-bec-faculty-member-publishes-paper-in-scopus-indexed-journal/" class="text-lg text-white font-medium title-font mb-4 hover:text-blue-300"> DOrSU-BEC faculty member publishes paper in ‘Scopus’ indexed journal
@@ -78,7 +141,7 @@
               </div>
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <div class="bg-gray-800 bg-opacity-40  rounded-lg">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/content4.jpg" alt="content">
                 <h3 class="tracking-widest text-blue-100 text-xs font-medium title-font">DORSU NEWSJUNE 8, 2022</h3>
                 <a href="https://dorsu.edu.ph/2022/06/08/dorsu-starts-construction-of-earthquake-proof-academic-technology-building/" class="text-lg text-white font-medium title-font mb-4 hover:text-blue-300"> DOrSU starts construction of earthquake – proof academic technology building
@@ -98,11 +161,12 @@
    
 <!--2nd-->
   
-    <section class="py-20 text-gray-400 body-font bg-gray-900">
-        <div class="container px-10  mx-auto">
+    <section class=" py-20 text-gray-400 body-font bg-gray-900">
+        <div class="text-center container px-10  mx-auto">
 
-        
-          <div class="flex flex-wrap -m-4">
+          <h1 class="mb-10 text-center sm:text-3xl text-2xl font-medium  title-font text-yellow-500 hover:text-blue-500">DAVAO ORIENTAL STATE UNIVERSITY INSTITUTES
+</h1>
+          <div class="flex flex-wrap m-5">
             <div class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 1.png" alt="content">
@@ -116,35 +180,71 @@
               
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white text-center">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 3.png" alt="content">
-                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">INSTITUTE OF COMPUTER AND ENGINEERING</h3>
+                <h3 class="tracking-widest text-white text-xs font-medium title-font">INSTITUTE OF COMPUTER AND ENGINEERING</h3>
               
                 
               </div>
-              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white text-center">
+            
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white ">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 2.png" alt="content">
+                <h3 class="tracking-widest text-white text-xs font-medium title-font">INSTITUTE OF BUSINESS AND PUBLIC AFFAIRS</h3>
+               
+              </div>
+              
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white ">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 8.png" alt="content">
+                <h3 class="tracking-widest text-white text-xs font-medium title-font">INSTITUTE OF EDUCATION AND TEACHER TRAINING</h3>
+            
+            </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" py-20 text-gray-400 body-font bg-gray-900">
+        <div class="text-center container px-10  mx-auto">
+
+          <h1 class="mb-10 text-center sm:text-3xl text-2xl font-medium  title-font text-yellow-500 hover:text-blue-500">MORE
+</h1>
+          <div class="flex flex-wrap m-5">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 5.png" alt="content">
-                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font"> PHILLIPINE TRANSPARENCY SEAL
-                </h3>
+                <h3 class="tracking-widest text-white text-xs font-medium title-font text-center"></h3>
                 
               </div>
+              
+              
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white text-center">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 2.png" alt="content">
-                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">INSTITUTE OF BUSINESS AND PUBLIC AFFAIRS</h3>
-               
-              </div>
-              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white text-center">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 6.png" alt="content">
-                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FREEDOM OF INFORMATION</h3>
-               
+                <h3 class="tracking-widest text-white text-xs font-medium title-font"></h3>
+              
+                
               </div>
+            
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white text-center">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 8.png" alt="content">
-                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">INSTITUTE OF EDUCATION AND TEACHER TRAINING</h3>
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white ">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic 9.png" alt="content">
+                <h3 class="tracking-widest text-white text-xs font-medium title-font"></h3>
+               
+              </div>
+              
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-blue-500 bg-opacity-40 p-6 rounded-lg text-white ">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/pic10.png" alt="content">
+                <h3 class="tracking-widest text-white text-xs font-medium title-font"></h3>
             
             </div>
               
@@ -198,42 +298,42 @@
             <br>
             <nav class="list-none mb-10">
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">BANAYBANAY CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">September 2022 (4)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">CATEEL CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">August 2022 (3)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">SAN ISIDRO CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">July 2022 (8)</a>
               </li>
               <br>
                <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">BANAYBANAY CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">June 2022 (16)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">CATEEL CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">May 2022 (9)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">SAN ISIDRO CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">April 2022 (8)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">BANAYBANAY CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">February 2022 (10)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">CATEEL CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">January 2022 (1)</a>
               </li>
               <br>
               <li>
-                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">SAN ISIDRO CAMPUS</a>
+                <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">November 2021 (4)</a>
               </li>
               <br>
-              <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">SAN ISIDRO CAMPUS</a>
+              <a href="#" class="transition duration-150 ease-out hover:ease-in text-gray-700 hover:text-yellow-200 underline">October 2021 (6)</a>
             </li>      
             </nav>
             
